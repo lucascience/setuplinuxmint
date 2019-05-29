@@ -78,9 +78,6 @@ sudo apt install brave-keyring brave-browser</code></pre>
 Flash
 <pre><code>sudo apt install adobe-flashplugin browser-plugin-freshplayer-pepperflash -y</code></pre>
 
-Gerenciador de Mensageiros Franz
-<pre><code>flatpak install --user https://flathub.org/repo/appstream/com.meetfranz.Franz.flatpakref</code></pre>
-
 Powershell
 <pre><code>wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
