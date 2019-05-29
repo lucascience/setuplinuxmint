@@ -1,8 +1,8 @@
 Personalização das configurações após instalação do Linux Mint
 
-*Última versão testada:* Linux Mint 19.1 Tessa (64 bits)
+**Última versão testada:** Linux Mint 19.1 Tessa (64 bits)
 
-h1. Instalação básica
+# Instalação básica
 
 Antes de mais nada, vamos rodar um update e um upgrade :)
 <pre><code>sudo apt update && sudo apt upgrade -y</code></pre>
@@ -28,11 +28,11 @@ Git & gitg
 Fonts true type
 <pre><code>sudo apt install msttcorefonts -y</code></pre>
 
-h1. Copiar arquivos deste projeto
+# Copiar arquivos deste projeto
 
 <pre><code>git clone git://github.com/lucascience/setuplinuxmint.git ~/.setuplinuxmint</code></pre>
 
-h1. Programas
+# Programas
 
 Remmina
 <pre><code>sudo apt install remmina remmina-plugin-rdp remmina-plugin-secret -y</code></pre>
@@ -119,12 +119,11 @@ Enable 32 bit programs
 Install Wine
 <pre><code>sudo apt install --install-recommends winehq-stable -y</code></pre>
 
-h1. DotFiles
+# DotFiles
 
-<pre><code>cp ~/.setuplinux/dotfiles/.bashrc ~
-cp ~/.setuplinux/dotfiles/.gitconfig ~</code></pre>
+<pre><code>cat ~/.setuplinux/dotfiles/.bashrc >> ~/.bashrc</code></pre>
 
-h1. Outros
+# Outros
 
 Extensions for Google Chrome:
 * Last Pass: https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd
