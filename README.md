@@ -40,7 +40,7 @@ Remmina
 Gparted
 <pre><code>sudo apt install gparted -y</code></pre>
 
-VPN Totvs (F5)
+VPN (F5)
 <pre><code>sudo dpkg -i ~/.setuplinuxmint/files/linux_f5vpn.x86_64.deb</code></pre>
 
 Filezilla
@@ -125,3 +125,4 @@ Install Wine
 Extensions for Google Chrome:
 * Last Pass: https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd
 * Video Speed Manager: https://chrome.google.com/webstore/detail/video-speed-manager/fkopaaikpmfhpmoobnmklgmcgmhgfkcd
+* Onetab: https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall
