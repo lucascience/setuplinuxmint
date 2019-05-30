@@ -124,5 +124,5 @@ Install Wine
 
 Extensions for Google Chrome:
 * Last Pass: https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd
-* Video Speed Manager: https://chrome.google.com/webstore/detail/video-speed-manager/fkopaaikpmfhpmoobnmklgmcgmhgfkcd
+* Video Speed Controller: https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk
 * Onetab: https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall
