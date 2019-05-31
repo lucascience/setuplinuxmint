@@ -120,29 +120,29 @@ Install Wine
 
 1. Remove the default Vino server:
 
-sudo apt remove vino -y
+<pre><code>sudo apt remove vino -y</code></pre>
 
 2. Install x11vnc:
 
-sudo apt install x11vnc -y
+<pre><code>sudo apt install x11vnc -y</code></pre>
 
 3. Create the directory for the password file:
 
-sudo mkdir /etc/x11vnc
+<pre><code>sudo mkdir /etc/x11vnc</code></pre>
 
 4. Create the encrypted password file:
 
-sudo x11vnc --storepasswd /etc/x11vnc/vncpwd
+<pre><code>sudo x11vnc --storepasswd /etc/x11vnc/vncpwd</code></pre>
 
 You will be asked to enter and verify the password.  Then press Y to save the password file.
 
 5. Create the systemd service file for the x11vnc service:
 
-sudo xed /lib/systemd/system/x11vnc.service
+<pre><code>sudo xed /lib/systemd/system/x11vnc.service</code></pre>
 
 Copy/Paste this code into the empty file:
 
-[Unit]
+<pre><code>[Unit]
 Description=Start x11vnc at startup.
 After=multi-user.target
 
@@ -151,25 +151,25 @@ Type=simple
 ExecStart=/usr/bin/x11vnc -auth guess -forever -noxdamage -repeat -rfbauth /etc/x11vnc/vncpwd -rfbport 5900 -shared
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=multi-user.target</code></pre>
 
-6: Reload the services:
+6. Reload the services:
 
-sudo systemctl daemon-reload
+<pre><code>sudo systemctl daemon-reload</code></pre>
 
 7. Enable the x11vnc service at boot time:
 
-sudo systemctl enable x11vnc.service
+<pre><code>sudo systemctl enable x11vnc.service</code></pre>
 
 8. Start the service:
 
 Either reboot or
 
-sudo systemctl start x11vnc.service
+<pre><code>sudo systemctl start x11vnc.service</code></pre>
 
 9. Install remmina-plugin-vnc
 
-sudo apt install remmina-plugin-vnc
+<pre><code>sudo apt install remmina-plugin-vnc</code></pre>
 
 # DotFiles
 
