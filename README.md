@@ -116,6 +116,61 @@ Enable 32 bit programs
 Install Wine
 <pre><code>sudo apt install --install-recommends winehq-stable -y</code></pre>
 
+# Liberação de acesso via VNC
+
+1. Remove the default Vino server:
+
+sudo apt remove vino -y
+
+2. Install x11vnc:
+
+sudo apt install x11vnc -y
+
+3. Create the directory for the password file:
+
+sudo mkdir /etc/x11vnc
+
+4. Create the encrypted password file:
+
+sudo x11vnc --storepasswd /etc/x11vnc/vncpwd
+
+You will be asked to enter and verify the password.  Then press Y to save the password file.
+
+5. Create the systemd service file for the x11vnc service:
+
+sudo xed /lib/systemd/system/x11vnc.service
+
+Copy/Paste this code into the empty file:
+
+[Unit]
+Description=Start x11vnc at startup.
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/x11vnc -auth guess -forever -noxdamage -repeat -rfbauth /etc/x11vnc/vncpwd -rfbport 5900 -shared
+
+[Install]
+WantedBy=multi-user.target
+
+6: Reload the services:
+
+sudo systemctl daemon-reload
+
+7. Enable the x11vnc service at boot time:
+
+sudo systemctl enable x11vnc.service
+
+8. Start the service:
+
+Either reboot or
+
+sudo systemctl start x11vnc.service
+
+9. Install remmina-plugin-vnc
+
+sudo apt install remmina-plugin-vnc
+
 # DotFiles
 
 <pre><code>cat ~/.setuplinux/dotfiles/.bashrc >> ~/.bashrc</code></pre>
