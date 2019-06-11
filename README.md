@@ -69,11 +69,9 @@ rm -rf flameshot.deb</code></pre>
 Snap
 <pre><code>sudo apt install snapd -y</code></pre>
 
-Brave Browser
-<pre><code>curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
-echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ $UBUNTU_CODENAME main" | sudo tee /etc/apt/sources.list.d/brave-browser-release-${UBUNTU_CODENAME}.list
-sudo apt update
-sudo apt install brave-keyring brave-browser</code></pre>
+Google Chrome
+<pre><code>wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb</code></pre>
 
 Flash
 <pre><code>sudo apt install adobe-flashplugin browser-plugin-freshplayer-pepperflash -y</code></pre>
