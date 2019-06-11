@@ -58,9 +58,9 @@ Synapse
 NMAP
 Use 'sudo nmap -sS <ip>' pra saber as portas abertas de uma máquina remota
 E use 'netstat -npl | grep <port>' para saber os processos servindo determinada porta
-<pre><code>sudo apt install nmap</code></pre>
+<pre><code>sudo apt install nmap -y</code></pre>
 
-Flameshot (Se o link estiver desatualizado, acesse essa página, baixe a última versão e salve-o com o nome flameshot.db:)
+Flameshot (Se o link estiver desatualizado, acesse essa página, baixe a última versão e salve-o com o nome flameshot.deb:)
 <pre><code>wget https://github.com/lupoDharkael/flameshot/releases/download/v0.6.0/flameshot_0.6.0_bionic_x86_64.deb -O flameshot.deb
 sudo dpkg -i flameshot.deb
 sudo apt-get install -f
