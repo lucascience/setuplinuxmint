@@ -8,7 +8,7 @@ Antes de mais nada, vamos rodar um update e um upgrade :)
 <pre><code>sudo apt update && sudo apt upgrade -y</code></pre>
 
 Remover programas não utilizados (lembrando que EU não os utilizo...rs)
-<pre><code>sudo apt remove hexchat transmission-gtk rhythmbox remove thunderbird -y</code></pre>
+<pre><code>sudo apt remove hexchat transmission-gtk rhythmbox thunderbird -y</code></pre>
 
 Codecs de mídia
 <pre><code>sudo apt install mint-meta-codecs -y</code></pre>
