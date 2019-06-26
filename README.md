@@ -10,6 +10,9 @@ Antes de mais nada, vamos rodar um update e um upgrade :)
 Remover programas não utilizados (lembrando que EU não os utilizo...rs)
 <pre><code>sudo apt remove hexchat transmission-gtk rhythmbox thunderbird -y</code></pre>
 
+Clamav Anti Virus
+<pre><code>sudo apt install clamav clamtk -y</code></pre>
+
 Codecs de mídia
 <pre><code>sudo apt install mint-meta-codecs -y</code></pre>
 
